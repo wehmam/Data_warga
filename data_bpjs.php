@@ -22,17 +22,17 @@
                 <table class="table table-hover mt-3">
                     <thead class="table-dark">
                         <tr>
-                            <th scope="col">Nama kepalakeluarga</th>
+                            <th scope="col">Nama kepala keluarga</th>
                             <th scope="col">No BPJS</th>
                             <th scope="col">Kelas BPJS</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php while($bpjs = mysqli_fetch_assoc($hasil)) : ?>
+                        <?php while($bpjs = mysqli_fetch_row($hasil)) : ?>
                         <tr>
-                            <td><?= $bpjs["nama_kepala_keluarga"] ?></td>
-                            <td><?= $bpjs["no_bpjs"] ?></td>
-                            <td><?= $bpjs["kelas_bpjs"] ?></td>
+                            <td><?= $bpjs[0] ?></td>
+                            <td><?= $bpjs[1] ?></td>
+                            <td><?= $bpjs[2] ?></td>
                         </tr>
                         <?php endwhile; ?>
                     </tbody>

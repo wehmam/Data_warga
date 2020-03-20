@@ -31,14 +31,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php while($warga = mysqli_fetch_row($data_warga)) : ?>
+                        <?php while($warga = mysqli_fetch_assoc($data_warga)) : ?>
                         <tr>
-                            <td><?= $warga[0] ?></td>
-                            <td><?= $warga[1] ?></td>
-                            <td><?= $warga[2] ?></td>
-                            <td><?= $warga[3] ?></td>
-                            <td><?= $warga[4] ?></td>
-                            <td><?= $warga[5] ?></td>
+                            <td><?= $warga["nomer_kartu_keluarga"] ?></td>
+                            <td><?= $warga["nama_kepala_keluarga"] ?></td>
+                            <td><?= $warga["nama_istri"] ?></td>
+                            <td><?= $warga["nama_anak"] ?></td>
+                            <td><?= $warga["jumlah_anak"] ?></td>
+                            <td><?= $warga["penghasilan"] ?></td>
                         </tr>
                         <?php endwhile; ?>
                     </tbody>
