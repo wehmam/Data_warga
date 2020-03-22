@@ -8,4 +8,6 @@ $join = "SELECT warga.nama_kepala_keluarga ,bpjs.no_bpjs ,bpjs.kelas_bpjs FROM w
 
 $hasil = mysqli_query($koneksi,$join);
 
+$gambar = mysqli_query($koneksi,"SELECT * FROM gambar");
+
 ?>
