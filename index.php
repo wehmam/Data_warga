@@ -52,6 +52,25 @@
         </div>
     </div>
 
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <H1 class="Text-center mt-5 mb-3">Kegiatan Masyarakat warga +62</H1>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <?php foreach($gambar as $gambars): ?>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/<?= $gambars["gambar"]; ?>" class="card-img-top img-fluid" style="height:300px" alt="...">
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
