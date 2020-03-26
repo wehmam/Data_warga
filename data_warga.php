@@ -18,6 +18,11 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-4">
+                <a href="tambah.php" class="btn btn-primary">Tambah Data</a>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-12">
                 <table class="table table-hover mt-3">
                     <thead class="table-dark">
@@ -28,6 +33,7 @@
                             <th scope="col">Nama Anak</th>
                             <th scope="col">Jumlah Anak</th>
                             <th scope="col">Penghasilan</th>
+                            <th scope="col">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -39,6 +45,10 @@
                             <td><?= $warga["nama_anak"] ?></td>
                             <td><?= $warga["jumlah_anak"] ?></td>
                             <td><?= $warga["penghasilan"] ?></td>
+                            <td>
+                            <a href="hapus.php?nomer_kartu_keluarga=<?= $warga["nomer_kartu_keluarga"];?>">Hapus </a> 
+                            <a href="Edit"> Edit</a>
+                            </td>
                         </tr>
                         <?php endwhile; ?>
                     </tbody>
